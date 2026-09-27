@@ -52,6 +52,17 @@ mapped. The controller blends the headphone channels (3-4) with main (1-2)
 using its :hwlabel:`HEADPHONES MIXING` knob, so by default the mapping sets
 Mixxx's own headphone mix to cue only (see :ref:`pioneer-ddj-1000-settings`).
 
+.. _pioneer-ddj-1000-mono-split:
+
+Headphones mono split
+~~~~~~~~~~~~~~~~~~~~~
+
+:hwlabel:`SHIFT` + :hwlabel:`QUANTIZE` (or :guilabel:`SPLIT` in the skin's
+mixer) switches the headphones between stereo and mono split: the cue mix in
+the left ear and main in the right, both in mono. Turn the controller's
+:hwlabel:`HEADPHONES MIXING` knob fully to :hwlabel:`CUE` while split is on,
+otherwise the controller also mixes main into the left ear.
+
 .. TODO: check on the hardware whether the MIC 1/2 inputs appear as inputs in
    Mixxx's sound hardware preferences, and document it here.
 
@@ -104,7 +115,8 @@ Browser section (p. 5)
      - Zoom the waveforms in or out.
    * - Rotary selector (press)
      - Load the selected track into the deck on that side (deck 1/3 on the left,
-       2/4 on the right). In the sidebar, open the selected item instead.
+       2/4 on the right). In the sidebar, open the selected item and move to
+       its track list instead.
        Press twice quickly to clone the other deck on the same side
        (instant double).
    * - :hwlabel:`BACK`
@@ -134,7 +146,8 @@ Deck sections (p. 6-7)
      - With :hwlabel:`VINYL` on: scratch. Let go of a spinning platter and the
        track follows it until it slows down. With :hwlabel:`VINYL` off: pitch bend.
    * - Jog wheel, outer ring
-     - Pitch bend.
+     - Pitch bend. After a scratch or backspin the ring is ignored until the
+       platter has stopped, so a coasting platter does not change the speed.
    * - :hwlabel:`SHIFT` + jog wheel
      - Search through the track.
    * - :hwlabel:`SEARCH` (hold) + jog wheel
@@ -156,6 +169,9 @@ Deck sections (p. 6-7)
      - Return to the track's original key.
    * - :hwlabel:`QUANTIZE`
      - Toggle quantize on all decks.
+   * - :hwlabel:`SHIFT` + :hwlabel:`QUANTIZE`
+     - Toggle headphones :ref:`mono split <pioneer-ddj-1000-mono-split>`. The
+       :hwlabel:`QUANTIZE` button shows the state while :hwlabel:`SHIFT` is held.
    * - :hwlabel:`SLIP`
      - Toggle slip mode.
    * - :hwlabel:`SHIFT` + :hwlabel:`SLIP`
@@ -282,7 +298,7 @@ Performance pads (p. 6)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The mode buttons select what the pads do. :hwlabel:`SHIFT` + a mode button
-selects the mode written below it, and that mode's base button blinks.
+selects the mode written below it, and lights that mode's button.
 :hwlabel:`PAGE` :hwlabel:`<` / :hwlabel:`>` switch between the two pages of a
 mode. :hwlabel:`SHIFT` + :hwlabel:`PAGE` :hwlabel:`<` / :hwlabel:`>` change
 the sampler bank in any mode. In the tables, pads 1-4 are the top row and
